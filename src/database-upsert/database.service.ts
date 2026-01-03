@@ -6,7 +6,7 @@ export class DatabaseService {
   private readonly logger = new Logger(DatabaseService.name);
 
   private pinecone = new Pinecone({
-    apiKey: process.env.PINECONE_DB || 'pcsk_27eTNr_59Li8VRA2vxPvdTUbQzv3AJ3XS2AvNak1cFzmBUzZ2f2oxS2ZmyufuA4M8wqdgQ', // ❗ DO NOT hardcode in real projects
+    apiKey: process.env.PINECONE_DB!, // ❗ DO NOT hardcode in real projects
   });
 
   private readonly indexName = 'document-chunks';
